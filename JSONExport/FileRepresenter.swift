@@ -374,7 +374,7 @@ class FileRepresenter{
                         
                         
                         let lowerCaseType = property.type.lowercased()
-                        propertyHandlingStr = propertyHandlingStr.replacingOccurrences(of: lowerCaseVarType, with: lowerCaseType)
+                        propertyHandlingStr = propertyHandlingStr.replacingOccurrences(of: lowerCaseModelName, with: lowerCaseType)
                         
                     }
                 }
@@ -505,7 +505,7 @@ class FileRepresenter{
                 }
                 
                 let lowerCaseType = property.type.lowercased()
-                propertyStr = propertyStr.replacingOccurrences(of: lowerCaseVarType, with: lowerCaseType)
+                propertyStr = propertyStr.replacingOccurrences(of: lowerCaseModelName, with: lowerCaseType)
                 
             }else{
                 propertyStr = constructor.fetchBasicTypePropertyFromMap

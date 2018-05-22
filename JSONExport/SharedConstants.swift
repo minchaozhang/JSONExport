@@ -38,7 +38,6 @@ let modelWithParentClassName = "<!ParentClass!>"
 let varName = "<!VarName!>"
 let capitalizedVarName = "<!CapitalizedVarName!>"
 let varType = "<!VarType!>"
-let swiftOptionVarType = "<!SwiftOptionVarType!>"
 let varTypeReplacement = "<!VarBasicTypeReplacement!>"
 let capitalizedVarType = "<!CapitalizedVarType!>"
 let lowerCaseVarType = "<!LowerCaseVarType!>"
@@ -47,4 +46,7 @@ let lowerCaseModelName = "<!LowerCaseModelName!>"
 let jsonKeyName = "<!JsonKeyName!>"
 let constKeyName = "<!ConstKeyName!>"
 let additionalCustomTypeProperty = "<!AdditionalForCustomTypeProperty!>"
+
+
+let swiftOptionVarType = "<!SwiftOptionVarType!>"
 

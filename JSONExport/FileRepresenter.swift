@@ -448,8 +448,12 @@ class FileRepresenter{
         propertyStr = propertyStr.replacingOccurrences(of: jsonKeyName, with: property.jsonName)
         propertyStr = propertyStr.replacingOccurrences(of: constKeyName, with: property.constName!)
         propertyStr = propertyStr.replacingOccurrences(of: varType, with: property.type)
+        let lowVarName = property.nativeName.lowercased()
+        let lowVarType = property.type.lowercased()
+        propertyStr = propertyStr.replacingOccurrences(of: lowerCaseVarName, with: lowVarName)
+        propertyStr = propertyStr.replacingOccurrences(of: lowerCaseVarType, with: lowVarType)
         let capVarName = property.nativeName.capitalized
-        let capVarType = property.type.capitalized;
+        let capVarType = property.type.capitalized
         propertyStr = propertyStr.replacingOccurrences(of: capitalizedVarName, with: capVarName)
         propertyStr = propertyStr.replacingOccurrences(of: capitalizedVarType, with: capVarType)
         return propertyStr

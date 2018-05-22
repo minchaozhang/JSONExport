@@ -21,10 +21,7 @@ protocol ModelTransformProtocol: ModelInitializProtocol {
 
 extension ModelTransformProtocol {
     static func model(fromResult result: Any) -> Self? {
-        if let dic = result as? [String: Any] {
-            return Self.init(fromDictionary: dic)
-        }
-        return nil
+        return modelArray(fromResult: result).first
     }
     
     static func modelArray(fromResult result: Any) -> [Self] {

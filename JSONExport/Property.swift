@@ -110,6 +110,9 @@ class Property : Equatable{
         string = string.replacingOccurrences(of: varType, with: type)
         string = string.replacingOccurrences(of: varName, with: nativeName)
         string = string.replacingOccurrences(of: jsonKeyName, with: jsonName)
+        if lang.langName == "Swift" {
+            string = string.replacingOccurrences(of: swiftOptionVarType, with: isCustomClass ? "?" : "")
+        }
         return string
     }
     
